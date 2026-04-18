@@ -1325,33 +1325,7 @@ def health_check():
 def index():
     """Root endpoint with API documentation"""
     return jsonify({
-        'service': 'Auto Shopify Checkout Tool API',
-        'version': '2.0',
-        'developer': '@MUMIRU_BRO',
-        'channel': '@MUMIRU_WHO',
-        'endpoints': {
-            '/shopify': {
-                'method': 'GET',
-                'params': {
-                    'site': 'Shopify store URL (required)',
-                    'cc': 'Card details in format: number|month|year|cvv (required)'
-                },
-                'example': '/shopify?site=store.myshopify.com&cc=4111111111111111|12|25|123'
-            },
-            '/shopify/mass': {
-                'method': 'POST',
-                'body': {
-                    'site': 'Shopify store URL',
-                    'cards': ['array of card strings']
-                },
-                'example': '{"site": "store.myshopify.com", "cards": ["4111111111111111|12|25|123"]}'
-            },
-            '/health': {
-                'method': 'GET',
-                'description': 'Health check endpoint'
-            }
-        },
-        'timestamp': datetime.now().isoformat()
+        "kyu re matherchomd" : "i"
     }), 200
 
 
